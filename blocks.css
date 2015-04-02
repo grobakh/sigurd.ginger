@@ -1,0 +1,128 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Sans+Narrow|PT+Sans+Caption:400,700&subset=latin,cyrillic);
+@font-face {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-weight: normal;
+  src: url('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/fonts/fontawesome-webfont.eot?v=4.0.3');
+  src: url('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+}
+.actionFont {
+  color: #33bef2;
+  font-size: medium;
+}
+.linkFont {
+  color: #33bef2;
+  font-size: medium;
+}
+.titleFont {
+  color: #000000;
+  font-size: 24px;
+}
+.subTitleFont {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial;
+  color: #000000;
+}
+.tableHeaderFont {
+  font-weight: bold;
+}
+.errorFont {
+  color: #ee7777;
+}
+@-webkit-keyframes blink {
+  0% {
+    -webkit-transform: scaleY(0);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+  }
+}
+@keyframes blink {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+.brackets:before {
+  content: " (";
+}
+.brackets:after {
+  content: ") ";
+}
+.kozuli .userNotification {
+  position: absolute;
+  right: 0;
+}
+.kozuli .headerBlock_headerBlock {
+  background-color: #808080;
+  height: 24px;
+}
+.kozuli .mainContainer {
+  margin-top: 12px;
+}
+.kozuli .mainContainer .leftBlock {
+  width: 408px;
+  top: 36px;
+  left: 24px;
+  bottom: 84px;
+  position: absolute;
+}
+.kozuli .mainContainer .leftBlock .leftListScroller {
+  position: absolute;
+  top: 48px;
+  left: 0;
+  bottom: 0;
+  width: 408px;
+}
+.kozuli .mainContainer .rightBlock {
+  right: 12px;
+  top: 36px;
+  bottom: 84px;
+  left: 468px;
+  position: absolute;
+}
+.kozuli .actions {
+  position: fixed;
+  bottom: 0;
+  height: 48px;
+  padding: 12px;
+  padding-left: 480px;
+  left: 0;
+  right: 0;
+  background-color: #a0a7bb;
+}
+.speculoos .userNotification {
+  position: absolute;
+  right: 0;
+}
+.speculoos .headerBlock_headerBlock {
+  background-color: #808080;
+  height: 24px;
+}
+.speculoos .mainContainer {
+  margin-top: 12px;
+}
+.speculoos .mainContainer .leftBlock {
+  padding: 12px;
+  padding-bottom: 84px;
+  width: 408px;
+  float: left;
+}
+.speculoos .mainContainer .rightBlock {
+  padding: 12px;
+  padding-bottom: 84px;
+  margin-left: 468px;
+}
+.speculoos .actions {
+  position: fixed;
+  bottom: 0;
+  height: 48px;
+  padding: 12px;
+  padding-left: 480px;
+  left: 0;
+  right: 0;
+  background-color: #a0a7bb;
+}

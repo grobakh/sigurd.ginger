@@ -1,0 +1,16 @@
+<div data-region="items"
+     data-source="@context recordCollection">
+    <div  data-region="panel"
+          data-context="@item"
+          data-class="@lambda p1={@context isError} result={p1? 'error' : ''}"
+          class="report">
+                <span data-region="label"
+                      data-text="@context targetMessage"></span>
+                <span data-region="url"
+                      data-url="@context targetUrl"
+                      data-new-window="true"
+                      data-text="@context targetName"></span>
+                <span data-region="label"
+                      data-text="@context reasonName"></span>
+    </div>
+</div>

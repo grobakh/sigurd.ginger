@@ -1,0 +1,63 @@
+@import "../../icons.less";
+
+.largeIconButton, .smallIconButton {
+  button {
+    .flat;
+    display: block;
+    border: none;
+    background: none;
+    padding: 0;
+    text-align: center;
+    text-decoration: none;
+    &:before {
+      .animate(color);
+      font-size: 28px;
+      color: @additionalFontColor;
+      height: 3 * @cell;
+      line-height: 3 * @cell;
+      width: 3 * @cell;
+    }
+    &:hover {
+      background: none;
+      &:before {
+        color: @basicFontColor;
+      }
+    }
+    &:active {
+      background: none;
+    }
+  }
+  &.up button {
+    .icon(up);
+  }
+  &.down button {
+    .icon(down);
+  }
+  &.add button {
+    .icon(add);
+  }
+  &.edit button {
+    .icon(edit);
+  }
+  &.delete button {
+    .icon(delete);
+  }
+  &.remove button {
+    .icon(remove);
+  }
+  &.save button {
+    .icon(save);
+  }
+  &.cancel button {
+    .icon(cancel);
+  }
+}
+
+.smallIconButton {
+  button:before {
+    font-size: 14px;
+    height: 2 * @cell;
+    width: 2 * @cell;
+  }
+}
+

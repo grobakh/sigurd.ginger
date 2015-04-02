@@ -1,0 +1,111 @@
+@import "fonts.less";
+@import "sizes.less";
+@import "colors.less";
+@import "templates.less";
+
+.kozuli {
+
+  .userNotification {
+    position: absolute;
+    right: 0;
+  }
+
+  .headerBlock_headerBlock {
+     background-color: @headerBackground;
+     height: @headerHeight;
+  }
+
+  @rightBlockDistance: @leftBlockWidth + @blocksPadding * 2 + 3 * @cell;
+  @blocksBottomPadding: @actionsHeight + 3 * @blocksPadding;
+
+  .mainContainer {
+
+    margin-top: @cell;
+
+    .leftBlock {
+      //padding: @blocksPadding;
+      //padding-bottom: @blocksBottomPadding;
+      width: @leftBlockWidth;
+      top: @headerHeight + @blocksPadding;
+      left: 2 * @blocksPadding;
+      bottom: @actionsHeight + (3 * @blocksPadding);
+      position: absolute;
+      //border-right: 1px solid #aaa;
+      .leftListScroller {
+        position: absolute;
+        top: 4*@cell;
+        left: 0;
+        bottom: 0;
+        width: @leftBlockWidth;
+      }
+    }
+
+    .rightBlock {
+      right: @blocksPadding;
+      top: @headerHeight + @blocksPadding;
+      bottom: @actionsHeight + (3 * @blocksPadding);
+      left: @rightBlockDistance;
+      position: absolute;
+      //border-left:  1px solid #aaa;
+    }
+  }
+
+  .actions {
+    position: fixed;
+    bottom: 0;
+    height: @actionsHeight;
+    padding: @blocksPadding;
+    padding-left: @rightBlockDistance + @blocksPadding;
+    left: 0;
+    right: 0;
+    background-color: @actionPanelBackgroundColor;
+  }
+
+}
+
+.speculoos {
+  .userNotification {
+    position: absolute;
+    right: 0;
+  }
+
+  .headerBlock_headerBlock {
+     background-color: @headerBackground;
+     height: 2 * @cell;
+  }
+
+  @rightBlockDistance: @leftBlockWidth + @blocksPadding * 2 + 3 * @cell;
+  @blocksBottomPadding: @actionsHeight + 3 * @blocksPadding;
+
+  .mainContainer {
+
+    margin-top: @cell;
+
+    .leftBlock {
+      padding: @blocksPadding;
+      padding-bottom: @blocksBottomPadding;
+      width: @leftBlockWidth;
+      float: left;
+      //border-right: 1px solid #aaa;
+    }
+
+     .rightBlock {
+      padding: @blocksPadding;
+      padding-bottom: @blocksBottomPadding;
+      margin-left: @rightBlockDistance;
+      //border-left:  1px solid #aaa;
+    }
+  }
+
+  .actions {
+    position: fixed;
+    bottom: 0;
+    height: @actionsHeight;
+    padding: @blocksPadding;
+    padding-left: @rightBlockDistance + @blocksPadding;
+    left: 0;
+    right: 0;
+    background-color: @actionPanelBackgroundColor;
+  }
+
+}

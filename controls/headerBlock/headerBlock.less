@@ -1,0 +1,41 @@
+@import "../../icons.less";
+
+.headerBlock_headerBlock {
+
+  .header {
+    //border-bottom: 1px solid #d6d6d6;
+  }
+
+  .right {
+    float: right;
+    margin-right: 15px;
+    font-size: 0;
+  }
+
+  .version {
+    .ptc(8px);
+    display: block;
+    text-align: right;
+    color: #cccccc;
+    margin-right: 32px; //потом придумаю, куда
+    //margin-top: -1px;
+  }
+
+  .navigation {
+    //Сюда нужно будет вставить иконку, но пока не ясно, какую
+    margin-left: @cell;
+    color: @headerFontColor;
+    &:before {
+      padding-right: @cell;
+    }
+  }
+
+  .login a {
+    .icon(login);
+  }
+
+  .exit a {
+    .icon(exit);
+  }
+
+}

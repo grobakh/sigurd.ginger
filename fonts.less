@@ -1,0 +1,69 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Sans+Narrow|PT+Sans+Caption:400,700&subset=latin,cyrillic);
+
+@font-face {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-weight: normal;
+  src: url('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/fonts/fontawesome-webfont.eot?v=4.0.3');
+  src: url('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'),
+       url('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'),
+       url('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+}
+
+@import "colors.less";
+@import "sizes.less";
+@import "templates.less";
+
+.pt(@size: 14px) {
+  font-family: 'PT Sans', sans-serif;
+  font-size: @size;
+}
+
+.ptc(@size: 14px) {
+  font-family: 'PT Sans Caption', sans-serif;
+  font-size: @size;
+}
+
+.additional () {
+  color: @additionalFontColor;
+}
+
+.fieldLabel () {
+  display: block;
+  .pt(14px);
+  line-height: 14px;
+  color: @fieldLabelColor;
+}
+
+
+.actionFont {
+  color: @actionColor;
+  font-size: medium;
+}
+
+.linkFont {
+  .actionFont;
+}
+
+.titleFont {
+  color: @titleColor;
+  font-size: 24px;
+}
+
+.subTitleFont {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial;
+  color: @titleColor;
+}
+
+.tableHeaderFont {
+  font-weight: bold;
+}
+
+.errorFont {
+  color: @errorTextColor;
+}
+
+
+

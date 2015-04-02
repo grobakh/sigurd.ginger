@@ -1,0 +1,67 @@
+@import "../../icons.less";
+
+.actionButton {
+  display: inline-block;
+  margin-right: 2 * @cell;
+  height: 3 * @cell;
+  button {
+    .flat;
+    .pt(14px);
+    color: @actonButtonFontColor;
+    display: inline-block;
+    border: 1px solid transparent;
+    background: none;
+    padding: 0;
+    text-decoration: none;
+    vertical-align: middle;
+    //line-height: 2 * @cell;
+    &:before {
+      //.animate(color);
+      display: inline-block;
+      font-size: 14px;
+      height: 14px;
+      color: @actonButtonFontColor;
+      padding-right: 4px;
+      vertical-align: baseline !important; //TODO MAX Хак, исправить
+    }
+    &:hover {
+      background: none;
+      border-bottom: 1px dotted @actonButtonFontColor;
+    }
+    &:active {
+      background: none;
+    }
+  }
+  &.default button {
+    padding: @halfCell @cell;
+    border: 1px solid @actonButtonFontColor;
+    border-radius: 8px;
+    .pt(18px);
+    vertical-align: middle;
+    &:before {
+      display: inline-block;
+      text-align: left;
+      font-size: @largeIconSize;
+      padding-right: @cell;
+      width: @largeIconSize;
+      height: 3 * @cell - 2;
+      line-height: 3 * @cell - 2;
+      vertical-align: middle !important; //TODO MAX Хак, исправить
+    }
+    &:hover {
+      background: lighten(@actionPanelBackgroundColor, 10%);
+    }
+  }
+  &.delete button {
+    .icon(delete);
+  }
+  &.save button {
+    .icon(save);
+  }
+  &.cancel button {
+    .icon(cancel);
+  }
+}
+
+
+

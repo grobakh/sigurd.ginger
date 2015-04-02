@@ -1,0 +1,39 @@
+@import "../../fonts";
+
+span.headerButton {
+  height: 2 * @cell;
+
+  a, span {
+    .flat;
+    .unselectable;
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0 @cell;
+    display: inline-block;
+    height: 2 * @cell;
+    line-height: 2 * @cell;
+    vertical-align: middle;
+    text-decoration: none;
+    color: @headerFontColor;
+    .pt(13px);
+  }
+
+  a[disabled] {
+    cursor: default;
+    text-decoration: none;
+    color: rgba(2, 141, 19, 0.32);
+  }
+
+  a:focus, a:hover {
+    background-color: @headerBackgroundHover;
+    outline: none;
+  }
+}
+
+span.headerButton.selected {
+  span {
+    background-color: @contentBackgroundColor;
+    color: @basicFontColor;
+  }
+}

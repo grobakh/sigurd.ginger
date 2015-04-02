@@ -1,0 +1,43 @@
+@import "../../icons.less";
+
+.hangedButton {
+  display: inline-block;
+  height: 3 * @cell;
+  a, button {
+    .flat;
+    .pt(14px);
+    color: @emphasisFontColor;
+    display: inline-block;
+    background: none;
+    text-decoration: none;
+    vertical-align: middle;
+    padding: @halfCell @cell;
+    border: 1px solid @emphasisFontColor;
+    border-radius: 8px;
+    .pt(18px);
+
+    &:before {
+      display: inline-block;
+      text-align: left;
+      font-size: @largeIconSize;
+      padding-right: @cell;
+      width: @largeIconSize;
+      height: 3 * @cell - 2;
+      line-height: 3 * @cell - 2;
+      vertical-align: middle !important; //TODO MAX Хак, исправить
+    }
+    &:hover {
+      background: darken(@contentBackgroundColor, 10%);
+      color: @basicFontColor;
+      border-color: @basicFontColor;
+    }
+
+    &:active {
+      background: none;
+    }
+  }
+
+  &.edit a {
+    .icon(edit);
+  }
+}

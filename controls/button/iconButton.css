@@ -1,0 +1,251 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Sans+Narrow|PT+Sans+Caption:400,700&subset=latin,cyrillic);
+@font-face {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-weight: normal;
+  src: url('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/fonts/fontawesome-webfont.eot?v=4.0.3');
+  src: url('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+}
+@-webkit-keyframes blink {
+  0% {
+    -webkit-transform: scaleY(0);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+  }
+}
+@keyframes blink {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+.brackets:before {
+  content: " (";
+}
+.brackets:after {
+  content: ") ";
+}
+.actionFont {
+  color: #33bef2;
+  font-size: medium;
+}
+.linkFont {
+  color: #33bef2;
+  font-size: medium;
+}
+.titleFont {
+  color: #000000;
+  font-size: 24px;
+}
+.subTitleFont {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial;
+  color: #000000;
+}
+.tableHeaderFont {
+  font-weight: bold;
+}
+.errorFont {
+  color: #ee7777;
+}
+.aspect.MEASURE > *:before {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjZBMTdERkUwQUFDNDExRTM4MUFCRkIzQkFGNjVDNDdCIiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjZBMTdERkUxQUFDNDExRTM4MUFCRkIzQkFGNjVDNDdCIj4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NkExN0RGREVBQUM0MTFFMzgxQUJGQjNCQUY2NUM0N0IiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NkExN0RGREZBQUM0MTFFMzgxQUJGQjNCQUY2NUM0N0IiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7oDL0yAAABgUlEQVR42uyWvUoEMRDHd9YVRVAObA4/itNCwQewsrOzsLayFCz0HsOHEA4bOysRwY9GWxELQV9ARAQtPAvBS/wvzh5jTLKJeAfKDfzYJTvJzPwzm13SsKSLliZdtl7Avx8w4ytFzMl9tSN55ZmnZcAvg79sZJNUZq0CFlnyVeEbI37xKbK6PNEHsA9OwCG4A0Nl25BGyPkItsEc+06BBhgETX4e1aW+xqmAGtgByzz2As45YBWcBm2J/rTialoLXIARsCnGpf8sWGEKU8Y6bf80QIE9MAOuLc9vwRNYBZchaoU0zQKYBwfgxmiCSfDGsj6DaXAV2jS2Vn7lBTa4C03bAsOgn4NO8Jwf7+EaqIBRMADGhf8735+BKtg15irbHmZGVab2i+CIK8ipi2d9QvJ7h4zqm4oiA+WoMq9gDBw7utTsam2ptO0fe9K0uDKfv1SquC9tGput82FPQjLicddhTb7XoshIRSaiS04p8n2eKOmwZR38DvZ+ov5pwA8BBgALMYsPV0DJbgAAAABJRU5ErkJggg==');
+}
+.aspect.MEASURE > *:before {
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 28px;
+  width: 28px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+.aspect.TEXT > *:before {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjIwNkVBNUJCQUFDODExRTNCODVDRkI4NkEwQjYxNUM1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjIwNkVBNUJDQUFDODExRTNCODVDRkI4NkEwQjYxNUM1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6MjA2RUE1QjlBQUM4MTFFM0I4NUNGQjg2QTBCNjE1QzUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6MjA2RUE1QkFBQUM4MTFFM0I4NUNGQjg2QTBCNjE1QzUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6mpTBSAAABn0lEQVR42uyWvUoDQRSFd5YgWClY+AgSQbSx8BWMD2BU4g8IPoFvoJXYWAg2KgoiopW2FraCKIiWQkBtFAuLFJIdz+JZuZnMTLJk2WovfOzdyfydezN3VmlYkKOFQc5WLJi5lfhUoi32tcXv1bRcsKXReFcWP40pl8KI/jE4EeqS35Rj165NVMECx/6nTvEcZhk6l0prSH3xV0K9GWpzYkWF820R0H+WPKv0TS50b5bMr0uGigHwCj64w0dwKlQc8T2y/JnmqGgRHIAZcNWWKmMHn3w+gFH6DfDdpZJzMOtTaC4YW5MLlkXbO5hivxrYpB/32aC/BoZE+7RtwdBTfWSyd8AKaIBbMAkOwTD4AjdgF+wxFU8MZ6rSpkX8X8Aq6AfP4A7UwDi4BhOWcRXbUQs950YJlYNgS0y2DvbBEtim4jr7//B5aS0Klhzei+NQZk7fwBjbRpiv2D8TOQw4tg8sgwrHNuX8ZqWJPKqjDimIOkTMWmlCUU26vTmUo/An57K1s1AYZFRPteW6c15PKq8LOLcvt+Ijqlgwtf0KMAD9x++uZFDYvAAAAABJRU5ErkJggg==');
+}
+.aspect.TEXT > *:before {
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 28px;
+  width: 28px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+.aspect.STRING > *:before {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOjUwNjMyNUUxQUFDQTExRTNBM0I2ODM5N0I1NTZBODc1IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOjUwNjMyNUUyQUFDQTExRTNBM0I2ODM5N0I1NTZBODc1Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6NTA2MzI1REZBQUNBMTFFM0EzQjY4Mzk3QjU1NkE4NzUiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6NTA2MzI1RTBBQUNBMTFFM0EzQjY4Mzk3QjU1NkE4NzUiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz6+AV7dAAABj0lEQVR42uyWPUsDQRCGb4+AH62taKViJ1pY2GhvYxXzI7RS0B+gIgj5C1oEtDAcdgpim1YLQVOKWCSpLOxufQffSzbn3p6Ru6tu4GF3Z+f2Y3Zm95SGeAWK7xUs5YSZS4Wliuml7QqmtH6baHPCIWXGopJcmld6aNcZ6iKDpgtmwRKogyfLYkLW2+CQOtciw6Qdip+vwAFogWfqeqBm2ET2c+CEOpWyoeF+/SNSPoB10NMD2WLfHlDsXwGL4Bics/8UTII26IIF6oUjlv2JzPISTNFI5BFssy66hqGPbGTyF1AHTdAC++ALbMTG1/GgqYI30AENi4vGE4JsHsywvQo+wQRYTgoaKZvggoYywLslj5Qjx6K6BNsaJz/7nSSDLV+De7p0GnyADs9mlzabhhulXYudk8dzHGNdysB0qeJ7qDLMwRu6V9LrFdyBnf74xg4DY5X/IeBYt/SK6KoMnlx36LzsR3meQuOm+dO9abP3HRFos/VT7lyVdtNUUj7I7QEu7M+t/IkqJxxZvgUYAGhqukXXN7AXAAAAAElFTkSuQmCC');
+}
+.aspect.STRING > *:before {
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 28px;
+  width: 28px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+.aspect.CHOICE > *:before {
+  background-image: url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABwAAAAcCAYAAAByDd+UAAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAyBpVFh0WE1MOmNvbS5hZG9iZS54bXAAAAAAADw/eHBhY2tldCBiZWdpbj0i77u/IiBpZD0iVzVNME1wQ2VoaUh6cmVTek5UY3prYzlkIj8+IDx4OnhtcG1ldGEgeG1sbnM6eD0iYWRvYmU6bnM6bWV0YS8iIHg6eG1wdGs9IkFkb2JlIFhNUCBDb3JlIDUuMC1jMDYwIDYxLjEzNDc3NywgMjAxMC8wMi8xMi0xNzozMjowMCAgICAgICAgIj4gPHJkZjpSREYgeG1sbnM6cmRmPSJodHRwOi8vd3d3LnczLm9yZy8xOTk5LzAyLzIyLXJkZi1zeW50YXgtbnMjIj4gPHJkZjpEZXNjcmlwdGlvbiByZGY6YWJvdXQ9IiIgeG1sbnM6eG1wPSJodHRwOi8vbnMuYWRvYmUuY29tL3hhcC8xLjAvIiB4bWxuczp4bXBNTT0iaHR0cDovL25zLmFkb2JlLmNvbS94YXAvMS4wL21tLyIgeG1sbnM6c3RSZWY9Imh0dHA6Ly9ucy5hZG9iZS5jb20veGFwLzEuMC9zVHlwZS9SZXNvdXJjZVJlZiMiIHhtcDpDcmVhdG9yVG9vbD0iQWRvYmUgUGhvdG9zaG9wIENTNSBXaW5kb3dzIiB4bXBNTTpJbnN0YW5jZUlEPSJ4bXAuaWlkOkZCREJEQUIxQUFDQTExRTNCRUI1OUMwRkY3QjYyN0Q0IiB4bXBNTTpEb2N1bWVudElEPSJ4bXAuZGlkOkZCREJEQUIyQUFDQTExRTNCRUI1OUMwRkY3QjYyN0Q0Ij4gPHhtcE1NOkRlcml2ZWRGcm9tIHN0UmVmOmluc3RhbmNlSUQ9InhtcC5paWQ6RkJEQkRBQUZBQUNBMTFFM0JFQjU5QzBGRjdCNjI3RDQiIHN0UmVmOmRvY3VtZW50SUQ9InhtcC5kaWQ6RkJEQkRBQjBBQUNBMTFFM0JFQjU5QzBGRjdCNjI3RDQiLz4gPC9yZGY6RGVzY3JpcHRpb24+IDwvcmRmOlJERj4gPC94OnhtcG1ldGE+IDw/eHBhY2tldCBlbmQ9InIiPz7rRoeCAAAAaklEQVR42uyWMQ7AIAwDcdX/f9ntwIAqFRoI7uIbkYghRyTAmyLkKGIcmM75so6E2owEdjcNwGxLmXmziEMoHD7DUE+O1Y58cYimGBVjQfUc2qEd2uF/DmfdIcPh9kez7SfnT5QDw1wCDABrfRtFQvFb6wAAAABJRU5ErkJggg==');
+}
+.aspect.CHOICE > *:before {
+  content: "";
+  background-repeat: no-repeat;
+  background-position: center;
+  height: 28px;
+  width: 28px;
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 4px;
+}
+.largeIconButton button,
+.smallIconButton button {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  display: block;
+  border: none;
+  background: none;
+  padding: 0;
+  text-align: center;
+  text-decoration: none;
+}
+.largeIconButton button:before,
+.smallIconButton button:before {
+  transition: color 200ms;
+  -webkit-transition: color 200ms;
+  -moz-transition: color 200ms;
+  -ms-transition: color 200ms;
+  font-size: 28px;
+  color: #b0b0b0;
+  height: 36px;
+  line-height: 36px;
+  width: 36px;
+}
+.largeIconButton button:hover,
+.smallIconButton button:hover {
+  background: none;
+}
+.largeIconButton button:hover:before,
+.smallIconButton button:hover:before {
+  color: #000000;
+}
+.largeIconButton button:active,
+.smallIconButton button:active {
+  background: none;
+}
+.largeIconButton.up button:before,
+.smallIconButton.up button:before {
+  content: "\f062";
+}
+.largeIconButton.up button:before,
+.smallIconButton.up button:before {
+  font-family: 'FontAwesome', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 4px;
+}
+.largeIconButton.down button:before,
+.smallIconButton.down button:before {
+  content: "\f063";
+}
+.largeIconButton.down button:before,
+.smallIconButton.down button:before {
+  font-family: 'FontAwesome', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 4px;
+}
+.largeIconButton.add button:before,
+.smallIconButton.add button:before {
+  content: "\f067";
+}
+.largeIconButton.add button:before,
+.smallIconButton.add button:before {
+  font-family: 'FontAwesome', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 4px;
+}
+.largeIconButton.edit button:before,
+.smallIconButton.edit button:before {
+  content: "\f040";
+}
+.largeIconButton.edit button:before,
+.smallIconButton.edit button:before {
+  font-family: 'FontAwesome', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 4px;
+}
+.largeIconButton.delete button:before,
+.smallIconButton.delete button:before {
+  content: "\f014";
+}
+.largeIconButton.delete button:before,
+.smallIconButton.delete button:before {
+  font-family: 'FontAwesome', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 4px;
+}
+.largeIconButton.remove button:before,
+.smallIconButton.remove button:before {
+  content: "\f068";
+}
+.largeIconButton.remove button:before,
+.smallIconButton.remove button:before {
+  font-family: 'FontAwesome', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 4px;
+}
+.largeIconButton.save button:before,
+.smallIconButton.save button:before {
+  content: "\f0c7";
+}
+.largeIconButton.save button:before,
+.smallIconButton.save button:before {
+  font-family: 'FontAwesome', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 4px;
+}
+.largeIconButton.cancel button:before,
+.smallIconButton.cancel button:before {
+  content: "\f00d";
+}
+.largeIconButton.cancel button:before,
+.smallIconButton.cancel button:before {
+  font-family: 'FontAwesome', sans-serif;
+  font-weight: normal;
+  font-style: normal;
+  display: inline-block;
+  vertical-align: middle;
+  padding-right: 4px;
+}
+.smallIconButton button:before {
+  font-size: 14px;
+  height: 24px;
+  width: 24px;
+}

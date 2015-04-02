@@ -1,0 +1,89 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Sans+Narrow|PT+Sans+Caption:400,700&subset=latin,cyrillic);
+@font-face {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-weight: normal;
+  src: url('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/fonts/fontawesome-webfont.eot?v=4.0.3');
+  src: url('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+}
+@-webkit-keyframes blink {
+  0% {
+    -webkit-transform: scaleY(0);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+  }
+}
+@keyframes blink {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+.brackets:before {
+  content: " (";
+}
+.brackets:after {
+  content: ") ";
+}
+.actionFont {
+  color: #33bef2;
+  font-size: medium;
+}
+.linkFont {
+  color: #33bef2;
+  font-size: medium;
+}
+.titleFont {
+  color: #000000;
+  font-size: 24px;
+}
+.subTitleFont {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial;
+  color: #000000;
+}
+.tableHeaderFont {
+  font-weight: bold;
+}
+.errorFont {
+  color: #ee7777;
+}
+.linkButton {
+  display: inline-block;
+}
+.linkButton button,
+.linkButton a {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 16px;
+  line-height: normal;
+  color: #4070b0;
+  display: inline-block;
+  border: none;
+  background: none;
+  padding: 0;
+  text-decoration: none;
+  vertical-align: middle;
+  border-bottom: 1px dotted #4070b0;
+}
+.linkButton button:hover,
+.linkButton a:hover {
+  color: #305484;
+  border-bottom-color: #305484;
+  background: none;
+}
+.linkButton button:active,
+.linkButton a:active {
+  color: #4090a0;
+  border-bottom-color: #4090a0;
+  background: none;
+}
+.linkButton a {
+  border-bottom-style: solid;
+}

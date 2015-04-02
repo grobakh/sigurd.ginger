@@ -1,0 +1,31 @@
+@import "../../fonts.less";
+
+.linkButton {
+  display: inline-block;
+  button, a {
+    .flat;
+    .pt(16px);
+    line-height: normal;
+    color: @linkColor;
+    display: inline-block;
+    border: none;
+    background: none;
+    padding: 0;
+    text-decoration: none;
+    vertical-align: middle;
+    border-bottom: 1px dotted @linkColor;
+    &:hover {
+      color: @linkHoverColor;
+      border-bottom-color: @linkHoverColor;
+      background: none;
+    }
+    &:active {
+      color: @linkActiveColor;
+      border-bottom-color: @linkActiveColor;
+      background: none;
+    }
+  }
+  a {
+    border-bottom-style: solid;
+  }
+}

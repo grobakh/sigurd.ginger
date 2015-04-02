@@ -1,0 +1,44 @@
+@import "../../icons.less";
+
+.controls_url_url.link {
+  a {
+    color: @linkColor;
+    display: inline-block;
+    border: none;
+    background: none;
+    padding: 0;
+    text-decoration: underline;
+    vertical-align: middle;
+    //border-bottom: 1px dotted @linkColor;
+    &:hover {
+      color: @linkHoverColor;
+      border-bottom-color: @linkHoverColor;
+      background: none;
+    }
+    &:active {
+      color: @linkActiveColor;
+      border-bottom-color: @linkActiveColor;
+      background: none;
+    }
+    &:visited {
+      color: @linkVisitedColor;
+      border-bottom-color: @linkVisitedColor;
+      background: none;
+    }
+  }
+}
+.controls_url_url.userName {
+  a {
+    color: @linkColor;
+    border: none;
+    background: none;
+    padding: 0;
+    text-decoration: none;
+    .icon(login);
+    //margin: 0 @cell;
+  }
+  a:before {
+    font-size: 14px;
+    margin: 0 0 2px 3px;
+  }
+}

@@ -1,0 +1,94 @@
+@import url(http://fonts.googleapis.com/css?family=PT+Sans:400,700|PT+Sans+Narrow|PT+Sans+Caption:400,700&subset=latin,cyrillic);
+@font-face {
+  font-family: 'FontAwesome';
+  font-style: normal;
+  font-weight: normal;
+  src: url('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/fonts/fontawesome-webfont.eot?v=4.0.3');
+  src: url('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/fonts/fontawesome-webfont.woff?v=4.0.3') format('woff'), url('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/fonts/fontawesome-webfont.ttf?v=4.0.3') format('truetype'), url('http://netdna.bootstrapcdn.com/font-awesome/4.0.3/fonts/fontawesome-webfont.svg?v=4.0.3#fontawesomeregular') format('svg');
+}
+@-webkit-keyframes blink {
+  0% {
+    -webkit-transform: scaleY(0);
+  }
+  100% {
+    -webkit-transform: scaleY(1);
+  }
+}
+@keyframes blink {
+  0% {
+    transform: scaleY(0);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+.brackets:before {
+  content: " (";
+}
+.brackets:after {
+  content: ") ";
+}
+.actionFont {
+  color: #33bef2;
+  font-size: medium;
+}
+.linkFont {
+  color: #33bef2;
+  font-size: medium;
+}
+.titleFont {
+  color: #000000;
+  font-size: 24px;
+}
+.subTitleFont {
+  font-size: 18px;
+  font-weight: bold;
+  font-family: Arial;
+  color: #000000;
+}
+.tableHeaderFont {
+  font-weight: bold;
+}
+.errorFont {
+  color: #ee7777;
+}
+span.headerButton {
+  height: 24px;
+}
+span.headerButton a,
+span.headerButton span {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -ms-user-select: none;
+  -webkit-user-select: none;
+  user-select: none;
+  background: none;
+  border: none;
+  margin: 0;
+  padding: 0 12px;
+  display: inline-block;
+  height: 24px;
+  line-height: 24px;
+  vertical-align: middle;
+  text-decoration: none;
+  color: #ffffff;
+  font-family: 'PT Sans', sans-serif;
+  font-size: 13px;
+}
+span.headerButton a[disabled] {
+  cursor: default;
+  text-decoration: none;
+  color: rgba(2, 141, 19, 0.32);
+}
+span.headerButton a:focus,
+span.headerButton a:hover {
+  background-color: #999999;
+  outline: none;
+}
+span.headerButton.selected span {
+  background-color: #ffffff;
+  color: #000000;
+}

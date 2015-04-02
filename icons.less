@@ -1,0 +1,183 @@
+@import "fonts.less";
+
+.aspectIcon(MEASURE) {
+  &:before {
+    background-image: url('/static/ginger/icons/measure.png');
+  }
+}
+
+.aspectIcon(TEXT) {
+  &:before {
+    background-image: url('/static/ginger/icons/text.png');
+  }
+}
+
+.aspectIcon(STRING) {
+  &:before {
+    background-image: url('/static/ginger/icons/string.png');
+  }
+}
+
+.aspectIcon(CHOICE) {
+  &:before {
+    background-image: url('/static/ginger/icons/choice.png');
+  }
+}
+
+.aspectIcon(@_) {
+  &:before {
+    content: "";
+    background-repeat: no-repeat;
+    background-position: center;
+    height: @largeIconSize;
+    width: @largeIconSize;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 4px;
+  }
+}
+
+.icon(TAge) {
+  &:before {
+    content: "\f118";
+  }
+}
+
+.icon(TLength) {
+  &:before {
+    content: "\f065";
+  }
+}
+
+.icon(CHOICE) {
+  &:before {
+    content: "\f0cb";
+  }
+}
+
+.icon(TEXT) {
+  &:before {
+    content: "\f044";
+  }
+}
+
+.icon(Dimension) {
+  &:before {
+    content: "\f07e";
+  }
+}
+
+.icon(up) {
+  &:before {
+    content: "\f062";
+  }
+}
+
+.icon(down) {
+  &:before {
+    content: "\f063";
+  }
+}
+
+.icon(delete) {
+  &:before {
+    content: "\f014";
+  }
+}
+
+.icon(add) {
+  &:before {
+    content: "\f067";
+  }
+}
+
+.icon(remove) {
+  &:before {
+    content: "\f068";
+  }
+}
+
+.icon(edit) {
+  &:before {
+    content: "\f040";
+  }
+}
+
+.icon(save) {
+  &:before {
+    content: "\f0c7";
+  }
+}
+
+.icon(cancel) {
+  &:before {
+    content: "\f00d";
+  }
+}
+
+.icon(login) {
+  &:before {
+    content: "\f007";
+  }
+}
+
+.icon(exit) {
+  &:before {
+    content: "\f08b";
+  }
+}
+
+.icon(bullet) {
+  &:before {
+    content: "\f0da";
+  }
+}
+
+.icon(expand) {
+  &:before {
+    content: "\f0d7";
+  }
+}
+
+.icon(collapse) {
+  &:before {
+    content: "\f0da";
+  }
+}
+
+.icon(@_) {
+  &:before {
+    font-family: 'FontAwesome', sans-serif;
+    font-weight: normal;
+    font-style: normal;
+    display: inline-block;
+    vertical-align: middle;
+    padding-right: 4px;
+  }
+}
+
+//Стили аспектов оставлены здесь, поскольку могут использоваться разными контролами. Возможно, стоит переделать, когда
+//станет понятнее, где и как мы их используем
+
+//.aspect.TAge { так это выглядит в моём мире, где пони кушают радугу и какают бабочками
+//  .icon(TAge);
+//}
+
+
+.aspect.MEASURE>* {
+  .aspectIcon(MEASURE);
+}
+
+.aspect.TEXT>* {
+  .aspectIcon(TEXT);
+}
+
+.aspect.STRING>* {
+  .aspectIcon(STRING);
+}
+
+.aspect.CHOICE>* {
+  .aspectIcon(CHOICE);
+}
+
+

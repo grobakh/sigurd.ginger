@@ -1,0 +1,66 @@
+@import "../../colors.less";
+
+.controls_checkbox_checkbox {
+
+  margin-right: 2px;
+  display: inline-block;
+  vertical-align: middle;
+  height: 16px;
+
+  input {
+    height: 16px;
+    width: 16px;
+    display: block;
+    padding: 0;
+    margin: 0;
+    outline: 0;
+    border: 0;
+    opacity: 0;
+  }
+
+  input+div {
+    display: block;
+    height: 16px;
+    width: 16px;
+    margin: -16px 0 0 0;
+    cursor: pointer;
+    background-image: none !important;
+    &:before {
+      font-family: 'FontAwesome', sans-serif;
+      font-size: 18px;
+      content: "\f096";
+      color: @emphasisFontColor;
+    }
+  }
+
+  input:hover+div:before {
+    color: @basicFontColor;
+  }
+
+  input:focus+div:before {
+    color: @focusFontColor;
+  }
+
+  input:checked+div:before {
+    content: "\f046";
+  }
+
+  input:checked:hover+div {
+    background: url('/static/common/default/controls/checkbox/images/check-true-active.png') no-repeat center;
+  }
+
+  input:focus:hover+div:before {
+    color: darken(@focusFontColor, 10%);
+  }
+
+  input:disabled+div:before {
+    //content: "\f0c8";
+    color: @additionalFontColor;
+    cursor: default;
+  }
+
+  input:disabled:checked+div {
+    cursor: default;
+    background: url('/static/common/default/controls/checkbox/images/check-true-disabled.png') no-repeat center;
+  }
+}
